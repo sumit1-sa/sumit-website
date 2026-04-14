@@ -6,13 +6,15 @@
 <title>Sumit Website</title>
 
 <style>
-body {
-  background: linear-gradient(to bottom, #89f7fe, #66a6ff);
+  body {
+  background: linear-gradient(-45deg, #00c6ff, #0072ff, #89f7fe, #66a6ff);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
   text-align: center;
   font-family: Arial;
   margin: 0;
   padding: 0;
-}
+  }
 
 /* Center पूरा content */
 .container {
@@ -69,7 +71,18 @@ button:active {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
- } 
+ }
+  @keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  }
 </style>
 
 </head>
