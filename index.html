@@ -12,26 +12,36 @@ body {
   font-family: Arial;
 }
 
+/* 🔥 Big Heading */
 h1 {
   color: darkblue;
+  font-size: 45px;
 }
 
+/* Text */
 p {
   color: black;
   font-size: 20px;
 }
 
-img {
-  width: 200px;
-  border-radius: 20px;
-}
-
+/* 🔥 Button Design */
 button {
+  width: 90%;
+  max-width: 300px;
   background-color: green;
   color: white;
-  padding: 25px;
+  padding: 15px;
   border-radius: 10px;
   border: none;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* 🔥 Vertical layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
 
@@ -44,7 +54,10 @@ button {
 <p>Main Sumit Chandel hoon. Mein loyal boy hun, mujhe meri mammy pasand hai.</p>
 
 <p>Yeh meri personal website hai jaha aap meri photos aur projects dekh sakte ho.</p>
-</div>
+
+<!-- 🔥 Buttons container -->
+<div class="container">
+
   <a href="https://instagram.com/loyal._.sumit" target="_blank">
     <button>Instagram</button>
   </a>
@@ -53,12 +66,12 @@ button {
     <button>Call Me</button>
   </a>
   
-  <a href="https://ibb.co/gM99NKHb"/IMG-20251215-203944.jpg" 
-  target="_blank">
-  <button>📸 Open My Photo</button>
-</a>
+  <a href="https://i.ibb.co/7JCCPm8x/IMG-20251215-203944.jpg" target="_blank">
+    <button>📸 Open My Photo</button>
+  </a>
+
 </div>
-  
+
 </body>
 
 </html>
