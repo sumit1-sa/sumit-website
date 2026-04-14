@@ -10,49 +10,59 @@ body {
   background-color: lightblue;
   text-align: center;
   font-family: Arial;
+  margin: 0;
+  padding: 0;
 }
 
-/* 🔥 Big Heading */
+/* Center पूरा content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;   /* 🔥 पूरा center में आएगा */
+  width: 100%;
+}
+
+/* Heading बड़ा + spacing */
 h1 {
   color: darkblue;
   font-size: 45px;
+  margin-top: 30px;
 }
 
 /* Text */
 p {
-  color: black;
   font-size: 20px;
+  margin: 10px 20px;
 }
 
-/* 🔥 Button Design */
-button {
-  width: 95%;              
-  max-width: 400px;       
-  background-color: green;
-  color: white;
-  padding: 20px;           
-  border-radius: 12px;
-  border: none;
-  font-size: 20px;         
-  margin: 12px 0;
-  cursor: pointer;         
-}
+/* Links full width */
 a {
   width: 100%;
   display: flex;
   justify-content: center;
   text-decoration: none;
 }
-/* 🔥 Vertical layout */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+
+/* Buttons full screen feel */
+button {
+  width: 95%;
+  max-width: 350px;
+  padding: 18px;
+  font-size: 20px;
+  margin: 12px 0;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
 }
-  button:active {
+
+/* Click effect */
+button:active {
   transform: scale(0.95);
-  }
+}
 </style>
 
 </head>
