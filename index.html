@@ -33,7 +33,11 @@ h1 {
   font-size: 45px;
   margin-top: 30px;
 }
-
+h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  color: #003366;
+}
 /* Text */
 p {
   font-size: 20px;
@@ -45,7 +49,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  text-decoration: none;
+  margin-bottom: 10px;
 }
 
 /* Buttons full screen feel */
@@ -55,11 +59,18 @@ button {
   padding: 18px;
   font-size: 20px;
   margin: 12px 0;
-  background-color: green;
+  background: linear-gradient(45deg, #00ffcc, #00cc66);
   color: white;
   border: none;
   border-radius: 12px;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,255,200,0.7);
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(0,255,200,1);
+  transform: scale(1.05);
 }
 
 /* Click effect */
@@ -90,7 +101,8 @@ button:active {
 
 <body>
 
-<div class="card">
+<div Loyal="card">
+  <img src="https://i.ibb.co/Wvgg3R55/1776187414769.jpg" width="120" style="border-radius:50%; margin-top:20px;">
   <h1>Loyal Sumit Official Website 🔥</h1>
 
   <p>Main Sumit Chandel hoon. Mein loyal boy hun.</p>
@@ -112,6 +124,9 @@ button:active {
  
   <a href="https://i.ibb.co/7JCCPm8x/IMG-20251215-203944.jpg" target="_blank">
     <button>📸 Open My Photo</button>
+ <p style="margin-top:30px; font-size:14px;">
+  © 2026 Loyal Sumit | All Rights Reserved
+ </p>
   </a>
 
 </div>
